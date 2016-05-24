@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../Project1-multi-page-website/CSS/normalize.css">
+    <link rel="stylesheet" href="scheduling-style.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700italic' rel='stylesheet' type='text/css'>
+    <title>Appointment Scheduling</title>
+</head>
+<body>
+    <header></header>
+    <h2>Online Scheduling</h2>
+    <form action="" method="post">
+        <fieldset class="client-info">
+            <legend>Customer Details</legend>
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" placeholder="First and Last Name" required aria-required="true">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="youremail@example.com" required aria-required="true">
+            <label for="phone" class="last-input">Contact Number:</label>
+            <input type="tel" id="phone" class="last-input" placeholder="10-digit phone number" required aria-required="true">
+        </fieldset>
+
+        <fieldset class="appt-detail">
+            <legend>Date, Time and Location</legend>
+            <label for="location">Office Location:</label>
+            <select name="location" id="location" aria-required="true">
+                <option value="sf">San Francisco</option>
+                <option value="silicon">Silicon Valley</option>
+                <option value="la">Los Angeles</option>
+                <option value="nyc">New York</option>
+                <option value="chicago">Chicago</option>
+            </select>
+            <label for="date">Date:</label>
+            <input type="date" id="date" min="2016-01-01" max="2017-12-31" required aria-required="true">
+            <label for="time">Time:</label>
+            <input type="time" id="time" step="900" required aria-required="true">
+            <label for="timezone" class="last-input">Time Zone:</label>
+            <select name="timezone" id="timezone" class="last-input">
+                <option value="pst">Pacific Standard Time (PST)</option>
+                <option value="ast">Atlantic Standard Time (AST)</option>
+                <option value="est">Eastern Standard Time (EST)</option>
+                <option value="cst">Central Standard Time (CST)</option>
+                <option value="mst">Mountain Standard Time (MST)</option>
+            </select>
+        </fieldset>
+
+        <fieldset class="message">
+            <legend>Message:</legend>
+            <textarea name="msg" id="msg" cols="50" rows="5" placeholder="Enter message here"></textarea>
+        </fieldset>
+
+    </form>
+</body>
+</html>

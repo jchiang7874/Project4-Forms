@@ -1,0 +1,104 @@
+html {
+    width: 100%;
+    background-color: #868DAA;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    width: 90%;
+    max-width: 900px;
+    height: 800px;
+    margin: 10px auto;
+    background-color: #fff;
+    box-shadow: 2px 3px 5px #1C1C2A, -2px -1px 5px #1C1C2A;
+}
+
+body, fieldset {
+    border: 2px solid #686E92;
+    border-radius: 5px;
+}
+
+header {
+    background: url("imgs/header-img.png");
+    background-size: cover;
+    height: 100px;
+    box-shadow: 0 2px 5px #686E92;
+}
+
+h2 {
+    margin-left: 30px;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: #1C1C2A;
+}
+
+form {
+    max-width: 450px;
+    margin: 20px auto;
+}
+
+fieldset {
+    width: 100%;
+    margin: 10px 0 30px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-before: 0em;
+    -webkit-padding-start: 0em;
+    -webkit-padding-end: 0em;
+    -webkit-padding-after: 0em;
+}
+
+legend {
+    margin: 0 0 10px 20px;
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #1C1C2A;
+}
+
+label, input, select {
+    display: inline-block;
+    margin: 8px;
+}
+
+label {
+    width: 30%;
+}
+
+input, select {
+    width: 60%;
+    padding-left: 5px;
+
+}
+
+input, select, textarea {
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid #c0c0c0;
+}
+
+.last-input {
+    margin-bottom: 15px;
+}
+
+textarea {
+    display: block;
+    width: 90%;
+    margin: 10px auto 15px;
+    padding: 5px;
+}
+
+@media only screen and (max-width: 550px)  {
+    body {
+        height: auto;
+    }
+    label, input, select {
+        display: inline-block;
+        margin: 5px;
+    }
+    fieldset {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+}

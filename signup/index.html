@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../Project1-multi-page-website/CSS/normalize.css">
+    <link rel="stylesheet" href="signup-style.css">
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+    <title>Signup Form</title>
+</head>
+<body>
+<div id="wrapper">
+    <article>
+
+        <form class="signup" action="" method="post" name="signup" id="signup">
+            <ul>
+                <li>
+                    <label for="fname">First Name:</label>
+                    <input type="text" name="fname" placeholder="First name" required>
+                </li>
+                <li>
+                    <label for="lname">Last Name:</label>
+                    <input type="text" name="lname" placeholder="Last name" required>
+                </li>
+                <li>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" placeholder="youremail@example.com" required>
+                </li>
+                <li>
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" name="dob" required>
+                </li>
+                <li>
+                    <label for="pswd">Password:</label>
+                    <input type="password" name="pswd" required>
+                </li>
+            </ul>
+        </form>
+
+        <button type="submit" form="signup" value="submit">Submit</button>
+    </article>
+</div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../Project1-multi-page-website/CSS/normalize.css">
+    <link rel="stylesheet" href="slider-style.css">
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+    <title>Color Slider</title>
+</head>
+<body>
+    <section id="slider-wrapper">
+        <h1>Color Slider</h1>
+        <div class="color-slider">
+            <label for="red">Red</label>
+            <input type="range" id="red" min="0" max="255" step="5" onchange="show(this.value)">
+            <span id="red-value">130</span>
+        </div>
+        <div class="color-slider">
+            <label for="green">Green</label>
+            <input type="range" id="green" min="0" max="255" step="5" onchange="show(this.value)">
+            <span id="green-value">130</span>
+        </div>
+        <div class="color-slider">
+            <label for="blue">Blue</label>
+            <input type="range" id="blue" min="0" max="255" step="5" onchange="show(this.value)">
+            <span id="blue-value">130</span>
+        </div>
+        <div class="color-slider">
+            <label for="alpha">Alpha</label>
+            <input type="range" id="alpha" min="0" max="1" step="0.01" onchange="show(this.value)">
+            <span id="alpha-value">0.5</span>
+        </div>
+        <div class="color-slider rgba">
+            <span id="rgba">RGBA</span>
+            <span id="rgba-value" onchange="show(v)">130, 130, 130, 0.5</span>
+        </div>
+
+        <div class="display-box">
+            <p>placeholder: color generator</p>
+        </div>
+
+    </section>
+
+
+    <script>
+        function show(v) {
+            var red = document.getElementById("red").value,
+                green = document.getElementById("green").value,
+                blue = document.getElementById("blue").value,
+                alpha = document.getElementById("alpha").value,
+                rgba = "";
+
+            document.getElementById("red-value").innerHTML = red;
+            document.getElementById("green-value").innerHTML = green;
+            document.getElementById("blue-value").innerHTML = blue;
+            document.getElementById("alpha-value").innerHTML = alpha;
+
+            rgba = red + ", " + green + ", " + blue + ", " + alpha;
+            document.getElementById("rgba-value").innerHTML = rgba;
+
+            return (rgba);
+        }
+    </script>
+</body>
+</html>

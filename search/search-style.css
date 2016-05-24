@@ -1,0 +1,71 @@
+body {
+    width: 100%;
+    font-size: 16px;
+}
+
+#wrapper {
+    font-family: 'Dosis', sans-serif;
+    width: 420px;
+    margin: 30px auto;
+    border: 3px solid black;
+    border-radius: 10px;
+    background: url("imgs/film.jpeg") no-repeat;
+    box-shadow: 2px 2px 5px #545151, -2px -2px 5px #545151;
+}
+
+h2 {
+    text-align: center;
+    text-shadow: 1px 1px 0 black;
+}
+
+input, select, button {
+    outline: none;
+}
+
+input, select {
+    width: 70%;
+    border-radius: 5px;
+}
+
+input, label {
+    padding: 2px;
+}
+
+label {
+    display: inline-block;
+    width: 20%;
+    text-align: right;
+}
+
+div {
+    margin: 10px;
+    padding: 5px;
+}
+
+button {
+    background: transparent;
+    display: block;
+    margin: 0 auto;
+    border: none;
+}
+
+img {
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+
+button:hover, button:active {
+    animation: full-rotate 2s infinite linear;
+    -webkit-animation: full-rotate 2s infinite linear;
+}
+
+@-webkit-keyframes full-rotate {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+}
+
+@keyframes full-rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}

@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'Chalk'; src: url("imgs/Borrowdale.otf");
+}
+
+body {
+    width: 100%;
+    font-size: 16px;
+}
+
+#wrapper {
+    font-family: 'Chalk', sans-serif;
+    width: 460px;
+    height: 420px;
+    margin: 30px auto;
+    border: 3px solid black;
+    border-radius: 10px;
+    background: url("imgs/chalk.png") no-repeat;
+    box-shadow: 2px 2px 5px #545151, -2px -2px 5px #545151;
+    padding: 5px 20px;
+}
+
+h2, button {
+    color: #EFEDEC;
+}
+
+.questionnaire {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #E4E6E8;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+input {
+    display: inline-block;
+    margin: 5px 10px;
+}
+
+textarea {
+    margin-left: 30px;
+    padding: 5px;
+    outline: none;
+    max-width: 85%;
+    max-height: 100px;
+}
+
+button {
+    display: block;
+    margin: 30px auto;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 2em;
+}
+
+button:hover {
+    animation: color-change 1s infinite;
+    -webkit-animation: color-change 1s infinite;
+    font-size: 2.5em;
+
+}
+
+@keyframes color-change {
+    0% {color: #E4E6E8;}
+    50% {color: #92ffa0;}
+    100% {color: #18fff5;}
+}
+
+@-webkit-keyframes color-change {
+    0% {color: #E4E6E8;}
+    50% {color: #92ffa0;}
+    100% {color: #18fff5;}
+}

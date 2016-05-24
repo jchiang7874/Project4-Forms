@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../Project1-multi-page-website/CSS/normalize.css">
+    <link rel="stylesheet" href="search-style.css">
+    <link href='https://fonts.googleapis.com/css?family=Dosis:600' rel='stylesheet' type='text/css'>    <title>Search Form</title>
+</head>
+<body>
+    <div id="wrapper">
+        <h2>Movie Search</h2>
+        <form class="search" action="" method="post" id="search" autocomplete="on">
+            <div class="search-field">
+                <label for="user-input">Title:</label>
+                <input type="search" name="user-input" placeholder="Enter the movie name" required>
+            </div>
+
+            <div class="dropdown-menu">
+                <label for="options">Genre:</label>
+                <select name="options" id="categories">
+                    <option value="placeholder" disabled selected>Movie Genre</option>
+                    <option value="action">Action</option>
+                    <option value="comedy">Comedy</option>
+                    <option value="horror">Horror</option>
+                    <option value="romance">Romance</option>
+                    <option value="drama">Drama</option>
+                    <option value="sci-fi">Sci-fi</option>
+                </select>
+            </div>
+        </form>
+        <button type="submit" form="search" value="search"><img src="imgs/search.ico" alt="">Search</button>
+    </div>
+</body>
+</html>

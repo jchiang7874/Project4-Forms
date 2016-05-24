@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../Project1-multi-page-website/CSS/normalize.css">
+    <link rel="stylesheet" href="questionnaire-style.css">
+    <title>Questionnaire</title>
+</head>
+<body>
+    <div id="wrapper">
+        <h2>What's your fav?</h2>
+        <form class="questionnaire" action="" method="post">
+            <div class="question">
+                What's your favorite cuisine?
+                <div class="choices">
+                    <input type="radio" name="cuisine" value="american">
+                    <label for="radio1">American</label>
+                </div>
+                <div class="choices">
+                    <input type="radio" name="cuisine" value="french">
+                    <label for="radio2">French</label>
+                </div>
+                <div class="choices">
+                    <input type="radio" name="cuisine" value="italian">
+                    <label for="radio3">Italian</label>
+                </div>
+                <div class="choices">
+                    <input type="radio" name="cuisine" value="japanese">
+                    <label for="radio4">Japanese</label>
+                </div>
+                <div class="choices">
+                    <input type="radio" name="cuisine" value="other">
+                    <label for="radio5">Other</label>
+                </div>
+                <textarea name="cuisine-other" cols="50" rows="3" placeholder="Please list here"></textarea>
+            </div>
+        </form>
+        <button type="submit" form="questionnaire" value="next">Next</button>
+    </div>
+</body>
+</html>
