@@ -1,0 +1,267 @@
+
+body {
+    min-height: 800px;
+    height: auto;
+    background-size: cover;
+    font-family: 'Muli', sans-serif;
+    font-size: 1em;
+    background: url("../imgs/sf.png") no-repeat center fixed;
+
+}
+
+#home {
+    padding-top: 10px;
+}
+
+.content-container {
+    margin-top: 30px;
+}
+
+/*******************************************/
+/**************** NAV BAR ******************/
+/*******************************************/
+
+nav {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    background-color: #183448;
+    display: flex;
+}
+
+ul {
+    flex: 1;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-padding-start: 0;
+}
+
+.menu {
+    text-align: left;
+}
+
+.icon {
+    text-align: right;
+}
+
+a, .icon-menu {
+    text-decoration: none;
+    color: #F0F8FF;
+    font-size: 1.2em;
+}
+
+.tab-menu, .icon-menu {
+    display: inline-block;
+    line-height: 35px;
+    text-align: center;
+    margin: 5px 0;
+    padding: 0 30px;
+    border-right: 1px solid #3D4E82;
+}
+
+.tab-menu:active, .tab-menu:hover, .icon-menu:active, .icon-menu:hover {
+    color: #323a42;
+    border-bottom: 5px solid #F0F8FF;
+}
+
+
+
+/*******************************************/
+/************ LANDING PAGE *****************/
+/*******************************************/
+
+.day-sf {
+    color: #072C40;
+    background-color: rgba(232, 233, 234, 0.33);
+    min-height: 500px;
+    margin: 100px 0;
+}
+
+.landing-page {
+    display: flex;
+    padding: 50px 20px;
+}
+
+/*******************************************/
+/***************** NAME ********************/
+/*******************************************/
+
+.name {
+    flex: 1;
+}
+
+.avatar {
+    width: 100px;
+    display: inline-block;
+}
+
+h1.my-name {
+    display: inline-block;
+    font-size: 3em;
+}
+
+span {
+    display: block;
+    font-size: 2em;
+    color: #F0F8FF;
+    font-family: 'Architects Daughter', cursive;
+    text-align: center;
+}
+
+/*******************************************/
+/**************** QUOTE ********************/
+/*******************************************/
+
+.quote {
+    flex: 1;
+    font-size: 1.25em;
+}
+
+/*******************************************/
+/*************** PORTFOLIO *****************/
+/*******************************************/
+
+#portfolio {
+    height: 50px;
+}
+
+.portfolio {
+    background: url("../imgs/sf-nite.png") no-repeat center fixed;
+    min-height: 800px;
+}
+
+.section-title {
+    color: rgba(218, 236, 236, 0.97);
+    font-size: 2.5em;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    padding: 25px 55px;
+}
+
+.thumbnail {
+    background-color: rgba(232, 233, 234, 0.33);
+    padding: 30px 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+.portfolio-img {
+    display: inline-block;
+    border-radius: 10px;
+    width: 300px;
+    height: 220px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    margin: 10px;
+}
+
+.portfolio-img:hover {
+    cursor: hand;
+}
+
+/*******************************************/
+/************* HOVER EFFECT ****************/
+/*******************************************/
+
+/* HOVER EFFECT TO BE OPTIMIZED AFTER JS CHAPTER */
+
+#btn {
+    background: url("../imgs/btns1.png");
+}
+
+#btn:hover {
+    background: url("../imgs/btn-hover.png");
+}
+
+#sidebar {
+    background: url("../imgs/sidebar1.png");
+}
+
+#sidebar:hover {
+    background: url("../imgs/sidebar-hover.png");
+}
+
+#forms {
+    background: url("../imgs/forms1.png");
+}
+
+#forms:hover {
+    background: url("../imgs/forms-hover.png");
+}
+
+#calc {
+    background: url("../imgs/calc1.png");
+}
+
+#calc:hover {
+    background: url("../imgs/calc-hover.png");
+}
+
+#product-list {
+    background: url("../imgs/product-list1.png");
+}
+
+#product-list:hover {
+    background: url("../imgs/product-list-hover.png");
+}
+
+/*******************************************/
+/**************** CONTACT ******************/
+/*******************************************/
+
+.contact {
+    color: #072C40;
+}
+
+
+
+/*******************************************/
+/**************** FOOTER *******************/
+/*******************************************/
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #2F2F2F;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: #C3C5C7;
+    box-shadow: 0 0 20px #0c0c0c;
+}
+
+
+/*******************************************/
+/************** MEDIA QUERY ****************/
+/*******************************************/
+
+@media only screen and (max-width: 850px) {
+    .tab-menu, .icon-menu {
+        padding: 0 10px;
+    }
+
+    h1.my-name {
+        font-size: 2em;
+    }
+
+    span {
+        font-size: 1.5em;
+        text-align: left;
+    }
+
+    .quote {
+        font-size: 1.15em;
+    }
+
+}
+
+@media only screen and (max-width: 585px) {
+    .tab-menu, .icon-menu {
+        display: inline-block;
+    }
+
+    ul {
+        flex: none;
+    }
+}
