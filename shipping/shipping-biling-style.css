@@ -70,15 +70,23 @@ input[type="checkbox"] {
     top: 16px;
     left: 10px;
 }
-/*
-.ship:after {
-    content: "";
+
+button {
+    border: none;
+    outline: none;
+    background: url("imgs/poly2.png");
+    color: #fff;
     display: block;
-    height: 30px;
+    margin: 30px auto;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1.3em;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.6);
 }
-*/
 
-
+button:hover {
+    box-shadow: inset 2px 2px 5px rgba(0,0,0,0.6);
+}
 
 /***********************************/
 /*********  Media Query  ***********/
