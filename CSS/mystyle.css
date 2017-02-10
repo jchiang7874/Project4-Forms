@@ -140,7 +140,7 @@ span {
 }
 
 .thumbnail {
-    background-color: rgba(232, 233, 234, 0.33);
+    /* background-color: rgba(232, 233, 234, 0.33); */
     padding: 30px 20px;
     display: inline-block;
     text-align: center;
